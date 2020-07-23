@@ -1,19 +1,8 @@
-* {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
- scroll-behavior: smooth;
- font-family: 'Rancho', sans-serif; 
+:root {
+ --primary-color: #003699;
+ --dark-color: #333333;
+ --light-color: #F4F4F4;
+ --loose-color: #DC3545;
+ --win-color: #28A745;
+ --modal-duration: 1s;
 }
-
-body {
- height: 100vh;
- display: flex;
- justify-content: center;
- flex-direction: column;
- align-items: center;
- background: linear-gradient(rgb(47,150,160), rgb(40,62,143));
- color: #FFFFFF; 
-}
-
-
