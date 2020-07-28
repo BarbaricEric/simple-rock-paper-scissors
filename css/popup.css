@@ -6,3 +6,15 @@
  --win-color: #28A745;
  --modal-duration: 1s;
 }
+
+.popup {
+ display: none;
+ position: fixed;
+ z-index: 1;
+ left: 0;
+ top: 0;
+ height: 100%;
+ width; 100%;
+ overflow: auto;
+ background: rgba(0,0,0, 0.5);
+}
