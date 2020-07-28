@@ -29,3 +29,20 @@ body {
  padding: 0 2rem;
  text-align: center;
 }
+
+.restart-btn {
+ display: none;
+ background: var(--light-color);
+ color: #333333;
+ padding: 0.4rem 1.3rem;
+ font-size: 1rem;
+ cursor: pointer;
+ outline: none;
+ border: none;
+ margin-bottom: 1rem;
+}
+
+.restart-btn:hover {
+ background: var(--primary-color);
+ color: #FFFFFF;
+}
