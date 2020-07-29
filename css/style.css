@@ -46,3 +46,12 @@ body {
  background: var(--primary-color);
  color: #FFFFFF;
 }
+
+.header {
+ text-align: center;
+ margin: 1rem 0;
+}
+
+.header h1 {
+ margin-bottom: 1rem;
+}
