@@ -30,3 +30,13 @@
  animation-name: popupopen;
  animation-duration: var(--modal-duration); 
 }
+
+.popup-content h1 {
+ margin-bottom: 1rem;
+}
+
+.popup-content p {
+ font-size: 1.2rem;
+ margin-top: 1rem;
+}
+
