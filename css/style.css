@@ -55,3 +55,11 @@ body {
 .header h1 {
  margin-bottom: 1rem;
 }
+
+.score {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ font-size: 1.2rem;
+ color: #FFFFFF;
+}
+
