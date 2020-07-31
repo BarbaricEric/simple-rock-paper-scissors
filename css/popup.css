@@ -40,3 +40,12 @@
  margin-top: 1rem;
 }
 
+@keyframes popupopen {
+ from {
+  opacity: 0;
+ }
+
+ to {
+  opacity: 1;
+ }
+}
