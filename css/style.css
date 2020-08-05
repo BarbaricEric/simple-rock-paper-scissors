@@ -87,3 +87,11 @@ body {
  color: var(--primary-color);
 }
 
+.text-win {
+ color: var(--win-color);
+}
+
+.text-loose {
+ color: var(--loose-color);
+}
+
