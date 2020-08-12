@@ -10,6 +10,21 @@ function play(e) {
  
 }
 
+// Function: Get Computer Choice 
+function getComputerChoice() {
+
+}
+
+//Function: Determine Winner
+function getWinner(p,c) {
+
+}
+
+//Clear Popup Window
+function
+
+//Restart Game
+function
 
 //Event Listeners
 choices.forEach(choice => choice.addEventListener('click', play));
