@@ -21,10 +21,16 @@ function getWinner(p,c) {
 }
 
 //Clear Popup Window
-function
+function clearPopup(e) {
+ if(e.target == popup) {
+ popup.style.display = 'none';
+ }
+}
 
 //Restart Game
 function
 
 //Event Listeners
 choices.forEach(choice => choice.addEventListener('click', play));
+window.addEventListener('click', clearPopup);
+restart.addEventListener('click', restartGame);
