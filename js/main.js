@@ -3,6 +3,14 @@ const score = document.getElementById('score');
 const result = document.getElementById('result');
 const restart = document.getElementById('restart');
 const popup = document.querySelector('.popup');
+const BROSWERSUPPORT = document.querySelector('.banner-support');
+const scoreboard = {
+ player: 0,
+ computer:0
+}
+
+//Browser Support Banner
+setTimeout(() => {BROSWERSUPPORT.style.display = 'none'}, 5.0*1000);
 
 //Main Function: Play Rock, Paper, Scissor Game
 function play(e) {
@@ -28,7 +36,14 @@ function clearPopup(e) {
 }
 
 //Restart Game
-function
+function restartGame() {
+ scoreboard.player = 0;
+ scoreboard.computer = 0;
+ score.textContent = `
+ <p>Player: 0</p>
+ <p>Computer: 0</p>
+ `;
+} 
 
 //Event Listeners
 choices.forEach(choice => choice.addEventListener('click', play));
