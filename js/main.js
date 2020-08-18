@@ -39,7 +39,7 @@ function clearPopup(e) {
 function restartGame() {
  scoreboard.player = 0;
  scoreboard.computer = 0;
- score.textContent = `
+ score.innerHTML = `
  <p>Player: 0</p>
  <p>Computer: 0</p>
  `;
