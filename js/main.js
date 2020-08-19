@@ -15,7 +15,8 @@ setTimeout(() => {BROSWERSUPPORT.style.display = 'none'}, 5.0*1000);
 //Main Function: Play Rock, Paper, Scissor Game
 function play(e) {
  restart.style.display = 'inline-block';
- 
+ const playerChoice = e.target.id;
+ const computerChoice = getComputerChoice();
 }
 
 // Function: Get Computer Choice 
@@ -25,6 +26,11 @@ function getComputerChoice() {
 
 //Function: Determine Winner
 function getWinner(p,c) {
+
+}
+
+//Function: Scoreboard 
+function showWinner(winner, computerChoice) {
 
 }
 
