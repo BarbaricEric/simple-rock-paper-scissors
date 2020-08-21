@@ -14,7 +14,7 @@ setTimeout(() => {BROSWERSUPPORT.style.display = 'none'}, 5.0*1000);
 
 //Main Function: Play Rock, Paper, Scissor Game
 function play(e) {
-  restart.style.display = 'inline-block';
+ restart.style.display = 'inline-block';
  const playerChoice = e.target.id;
  const computerChoice = getComputerChoice();
  const winner = getWinner(playerChoice, computerChoice);
@@ -23,7 +23,14 @@ function play(e) {
 
 // Function: Get Computer Choice 
 function getComputerChoice() {
-
+ const rand = Math.random();
+ if(rand < 0.34) {
+  return 'rock';
+ } else if(rand <= 0.67) {
+  return 'paper';
+ } else {
+  return 'scissors';
+ }
 }
 
 //Function: Determine Winner
