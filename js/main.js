@@ -25,11 +25,11 @@ function play(e) {
 function getComputerChoice() {
  const rand = Math.random();
  if(rand < 0.34) {
-  return '#rock';
+  return 'rock';
  } else if(rand <= 0.67) {
-  return '#paper';
+  return 'paper';
  } else {
-  return '#scissors';
+  return 'scissors';
  }
 }
 
