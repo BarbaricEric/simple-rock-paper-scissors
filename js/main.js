@@ -50,7 +50,7 @@ function getWinner(p,c) {
    return 'player';
   }
  } else if(p === 'scissors') {
-  if (c === 'rock';) {
+  if (c === 'rock') {
    return 'computer';
   } else {
    return 'player';
