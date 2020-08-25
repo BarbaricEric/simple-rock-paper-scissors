@@ -20,6 +20,7 @@ body {
  line-height: 1.6;
  background: linear-gradient(rgb(47,150,160), rgb(40,62,143));
  background-repeat: no-repeat;
+ background-attachment: fixed;
  color: #333333; 
 }
 
