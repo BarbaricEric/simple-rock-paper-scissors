@@ -60,7 +60,11 @@ function getWinner(p,c) {
 
 //Function: Scoreboard 
 function showWinner(winner, computerChoice) {
-
+ if(winner === 'player') {
+  
+ } else if(winner === 'computer') {
+ 
+ //Show Score 
 }
 
 //Clear Popup Window
