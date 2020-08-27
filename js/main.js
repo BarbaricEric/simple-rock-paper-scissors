@@ -61,10 +61,20 @@ function getWinner(p,c) {
 //Function: Scoreboard 
 function showWinner(winner, computerChoice) {
  if(winner === 'player') {
-  
+  //Increase Player Score by 1
+  scoreboard.player++;
+  //Show Player score result
+
  } else if(winner === 'computer') {
+   //Increase Computer Score by 1
+  scoreboard.computer++;
+  //Show Computer score result
+  
+ } else { 
  
  //Show Score 
+  
+popup.style.display = 'block';  
 }
 
 //Clear Popup Window
