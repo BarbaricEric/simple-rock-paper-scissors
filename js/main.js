@@ -73,7 +73,10 @@ function showWinner(winner, computerChoice) {
  } else { 
  
  //Show Score 
- score.innerHTML = `<p>Player: ${scoreboard.player}</p> <p>Computer: ${scoreboard.computer}</p>`;  
+ score.innerHTML = `
+<p>Player: ${scoreboard.player}</p>
+<p>Computer: ${scoreboard.computer}</p>
+`;  
   
 popup.style.display = 'block';  
 }
@@ -89,7 +92,9 @@ function clearPopup(e) {
 function restartGame() {
  scoreboard.player = 0;
  scoreboard.computer = 0;
- score.innerHTML = `<p>Player: 0</p> <p>Computer: 0</p>`;
+ score.innerHTML = `
+<p>Player: 0</p> <p>Computer: 0</p>
+`;
 } 
 
 //Event Listeners
