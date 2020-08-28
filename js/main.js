@@ -73,6 +73,10 @@ function showWinner(winner, computerChoice) {
  } else { 
  
  //Show Score 
+ score.innerHTML = `
+ <p>Player: ${scoreboard.player}</p>
+ <p>Computer: ${scoreboard.computer}</p>
+ `;  
   
 popup.style.display = 'block';  
 }
