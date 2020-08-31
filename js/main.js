@@ -7,7 +7,7 @@ const BROSWERSUPPORT = document.querySelector('.banner-support');
 const scoreboard = {
  player: 0,
  computer:0
-}
+};
 
 //Browser Support Banner
 setTimeout(() => {BROSWERSUPPORT.style.display = 'none'}, 5.0*1000);
