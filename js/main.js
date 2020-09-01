@@ -3,6 +3,7 @@ const score = document.getElementById('score');
 const result = document.getElementById('result');
 const restart = document.getElementById('restart');
 const popup = document.querySelector('.popup');
+const altPopup = document.querySelector('.altPopup');
 const BROSWERSUPPORT = document.querySelector('.banner-support');
 const scoreboard = {
  player: 0,
@@ -62,23 +63,33 @@ function getWinner(p,c) {
 function showWinner(winner, computerChoice) {
  if(winner === 'player') {
   //Increase Player Score by 1
-  scoreboard.player++;
-  //Show Player score result
-
+   scoreboard.player++;
+  //Show popup result
+  result.innerHTML = `
+   <h1 class="text-win">You Win</h1>
+   
+  `;
  } else if(winner === 'computer') {
-   //Increase Computer Score by 1
+  //Increase Computer Score by 1
   scoreboard.computer++;
-  //Show Computer score result
-  
- } else { 
- 
- //Show Score 
+  //Show popup result
+  result.innerHTML = `
+   <h1 class="text-loose">You Loose</h1>
+   
+  `;
+ } else {
+   result.innerHTML = `
+   <h1>It's a Draw</h1>
+   
+  `;
+ }
+ //Show Score
  score.innerHTML = `
-<p>Player: ${scoreboard.player}</p>
-<p>Computer: ${scoreboard.computer}</p>
-`;  
-  
-popup.style.display = 'block';  
+ <p>Player: ${scoreboard.player}</p>
+ <p>Computer: ${scoreboard.computer}</p>
+ `;
+
+popup.style.display = 'block';
 }
 
 //Clear Popup Window
@@ -87,18 +98,26 @@ function clearPopup(e) {
  popup.style.display = 'none';
  }
 }
+ 
+//Clear Popup Window
+function exitPopup(e) {
+ if(e.target == altPopup) {
+ popup.style.display = 'none';
+ }
+} 
 
 //Restart Game
 function restartGame() {
  scoreboard.player = 0;
  scoreboard.computer = 0;
  score.innerHTML = `
-<p>Player: 0</p>
-<p>Computer: 0</p>
-`;
+ <p>Player: 0</p>
+ <p>Computer: 0</p>
+ `;
 } 
  
 //Event Listeners
 choices.forEach(choice => choice.addEventListener('click', play));
 window.addEventListener('click', clearPopup);
 restart.addEventListener('click', restartGame);
+window.addEvenListener('click', exitPopup);
