@@ -67,6 +67,7 @@ function showWinner(winner, computerChoice) {
   //Show popup result
   result.innerHTML = `
    <h1 class="text-win">You Win</h1>
+   <i class="fas fa-hand-${computerChoice} fa-10x"></i>
    
   `;
  } else if(winner === 'computer') {
@@ -75,11 +76,13 @@ function showWinner(winner, computerChoice) {
   //Show popup result
   result.innerHTML = `
    <h1 class="text-loose">You Loose</h1>
+   <i class="fas fa-hand-${computerChoice} fa-10x"></i>
    
   `;
  } else {
    result.innerHTML = `
    <h1>It's a Draw</h1>
+   <i class="fas fa-hand-${computerChoice} fa-10x"></i>
    
   `;
  }
