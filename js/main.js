@@ -99,15 +99,15 @@ popup.style.display = 'block';
 }
 
 //Clear Popup Window
-/*function clearPopup(e) {
+function clearPopup(e) {
  if(e.target == popup) {
  popup.style.display = 'none';
  }
-}*/
+}
  
 //Clear Popup Window
 function exitPopup(e) {
- if(e.target == altPopup) {
+ if(e.target === altPopup) {
  popup.style.display = 'none';
  }
 } 
@@ -124,6 +124,6 @@ function restartGame() {
  
 //Event Listeners
 choices.forEach(choice => choice.addEventListener('click', play));
-//window.addEventListener('click', clearPopup);
+window.addEventListener('click', clearPopup);
 restart.addEventListener('click', restartGame);
 window.addEventListener('click', exitPopup);
