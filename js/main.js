@@ -107,7 +107,7 @@ function clearPopup(e) {
  
 //Clear Popup Window
 function exitPopup(e) {
- if(e.target === altPopup) {
+ if(e.target == altPopup) {
  popup.style.display = 'none';
  }
 } 
