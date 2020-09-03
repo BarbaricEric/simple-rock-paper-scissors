@@ -60,6 +60,14 @@
  }
 }
 
+@media (min-device-width: 320px) {
+ .altPopup {
+  width: 80px;
+  top: 30px;
+  right: 9px;
+ }
+}
+
 @media (min-device-width: 360px) {
  .altPopup {
   width: 80px;
