@@ -64,14 +64,14 @@
  .altPopup {
   width: 80px;
   top: 40px;
-  right: 9px;
+  right: 29px;
  }
 }
 
 @media (min-device-width: 420px) {
  .altPopup {
   width: 80px;
-  top: 40px;
-  right: 29px;
+  top: 80px;
+  right: 209px;
  }
 }
