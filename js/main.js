@@ -99,11 +99,11 @@ popup.style.display = 'block';
 }
 
 //Clear Popup Window
-function clearPopup(e) {
+/*function clearPopup(e) {
  if(e.target == popup) {
  popup.style.display = 'none';
  }
-}
+}*/
  
 //Clear Popup Window
 function exitPopup(e) {
