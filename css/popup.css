@@ -84,7 +84,7 @@
  }
 }
 
-@media (min-device-width: 1024px) {
+@media (min-device-width: 740px) {
  .altPopup {
   width: 80px;
   top: 100px;
