@@ -75,3 +75,11 @@
   right: 209px;
  }
 }
+
+@media (min-device-width: 1024px) {
+ .altPopup {
+  width: 80px;
+  top: 100px;
+  right: 349px;
+ }
+}
