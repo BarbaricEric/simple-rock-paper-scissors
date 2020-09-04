@@ -66,6 +66,9 @@
   top: 30px;
   right: 9px;
  }
+ .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
 }
 
 @media (min-device-width: 360px) {
@@ -74,6 +77,9 @@
   top: 40px;
   right: 29px;
  }
+  .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
 }
 
 @media (min-device-width: 420px) {
@@ -82,6 +88,9 @@
   top: 80px;
   right: 209px;
  }
+  .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
 }
 
 @media (min-device-width: 770px) {
@@ -90,6 +99,9 @@
   top: 100px;
   right: 349px;
  }
+  .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
 }
 
 @media (min-device-width: 1349px) {
