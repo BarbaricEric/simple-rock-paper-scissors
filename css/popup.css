@@ -91,3 +91,11 @@
   right: 349px;
  }
 }
+
+@media (min-device-width: 1349px) {
+ .altPopup {
+  width: 80px;
+  top: 140px;
+  right: 519px;
+ }
+}
