@@ -193,6 +193,7 @@ body {
  .choice {
   font-size: 110px;
   grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: none;
  }
 }
 
@@ -200,6 +201,7 @@ body {
  .choice {
   font-size: 80px;
   grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: none;
  }
  .banner-support {
     position: fixed;
@@ -250,24 +252,28 @@ body {
 
 @media (min-device-width: 320px) {
  .choices {
-    grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: none;
  } 
 }
 
 @media (min-device-width: 360px) {
   .choices {
-    grid-template-rows: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: none;
  } 
 }
 
 @media (min-device-width: 420px) {
   .choices {
-    grid-template-rows: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: none;
  } 
 }
 
 @media (min-device-width: 770px) {
   .choices {
-    grid-template-rows: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: none;
  } 
 }
