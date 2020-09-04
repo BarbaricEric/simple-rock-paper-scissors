@@ -192,12 +192,14 @@ body {
 @media(max-width: 700px) {
  .choice {
   font-size: 110px;
+  grid-template-rows: repeat(3, 1fr);
  }
 }
 
 @media(max-width: 500px) {
  .choice {
   font-size: 80px;
+  grid-template-rows: repeat(3, 1fr);
  }
  .banner-support {
     position: fixed;
@@ -244,4 +246,28 @@ body {
  .social-media-icon { 
   margin-left: 20px;
  }
+}
+
+@media (min-device-width: 320px) {
+ .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
+}
+
+@media (min-device-width: 360px) {
+  .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
+}
+
+@media (min-device-width: 420px) {
+  .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
+}
+
+@media (min-device-width: 770px) {
+  .choices {
+    grid-template-rows: repeat(3, 1fr);
+ } 
 }
