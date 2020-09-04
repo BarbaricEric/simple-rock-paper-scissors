@@ -126,4 +126,4 @@ function restartGame() {
 choices.forEach(choice => choice.addEventListener('click', play));
 window.addEventListener('click', clearPopup);
 restart.addEventListener('click', restartGame);
-window.addEventListener('click', exitPopup);
+document.addEventListener('click', exitPopup);
