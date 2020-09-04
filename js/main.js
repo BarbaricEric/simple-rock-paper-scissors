@@ -69,7 +69,7 @@ function showWinner(winner, computerChoice) {
    <h1 class="text-win">You Win</h1>
    <i class="fas fa-hand-${computerChoice} fa-10x"></i>
    
-   <img src="img/closeLight.svg" class="altPopup" alt="close window"/>
+   
   `;
  } else if(winner === 'computer') {
   //Increase Computer Score by 1
@@ -79,14 +79,14 @@ function showWinner(winner, computerChoice) {
    <h1 class="text-loose">You Loose</h1>
    <i class="fas fa-hand-${computerChoice} fa-10x"></i>
    
-   <img src="img/closeLight.svg" class="altPopup" alt="close window"/>
+   
   `;
  } else {
    result.innerHTML = `
    <h1>It's a Draw</h1>
    <i class="fas fa-hand-${computerChoice} fa-10x"></i>
    
-   <img src="img/closeLight.svg" class="altPopup" alt="close window"/>
+   
   `;
  }
  //Show Score
@@ -126,4 +126,4 @@ function restartGame() {
 choices.forEach(choice => choice.addEventListener('click', play));
 window.addEventListener('click', clearPopup);
 restart.addEventListener('click', restartGame);
-document.addEventListener('click', exitPopup);
+window.addEventListener('click', exitPopup);
