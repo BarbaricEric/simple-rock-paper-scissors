@@ -68,8 +68,7 @@ function showWinner(winner, computerChoice) {
   result.innerHTML = `
    <h1 class="text-win">You Win</h1>
    <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-   
-   
+   <p>Computer Chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}</strong> </p>
   `;
  } else if(winner === 'computer') {
   //Increase Computer Score by 1
@@ -78,15 +77,13 @@ function showWinner(winner, computerChoice) {
   result.innerHTML = `
    <h1 class="text-loose">You Loose</h1>
    <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-   
-   
+   <p>Computer Chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}</strong> </p>
   `;
  } else {
    result.innerHTML = `
    <h1>It's a Draw</h1>
    <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-   
-   
+   <p>Computer Chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}</strong> </p>
   `;
  }
  //Show Score
@@ -99,11 +96,11 @@ popup.style.display = 'block';
 }
 
 //Clear Popup Window
-function clearPopup(e) {
+/*function clearPopup(e) {
  if(e.target == popup) {
  popup.style.display = 'none';
  }
-}
+}*/
  
 //Clear Popup Window
 function exitPopup(e) {
@@ -124,6 +121,6 @@ function restartGame() {
  
 //Event Listeners
 choices.forEach(choice => choice.addEventListener('click', play));
-window.addEventListener('click', clearPopup);
+/*window.addEventListener('click', clearPopup);*/
 restart.addEventListener('click', restartGame);
 window.addEventListener('click', exitPopup);
